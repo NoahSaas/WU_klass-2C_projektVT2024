@@ -1,0 +1,67 @@
+* {
+    background-color: whitesmoke;
+}
+
+#wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 100vh 100vh;
+    grid-template-areas:
+    "hea hea hea"
+    "sec sec sec"
+    "sec sec sec";
+}
+
+header {
+    background-color: black;
+    grid-area: hea;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "h1 inp"
+    "nav nav"
+    ;
+}
+
+header h1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: transparent;
+    font-size: 5vw;
+    font-weight: bolder;
+    color: rgb(222, 17, 17);
+}
+
+input {
+    background-color: brown;
+    grid-area: inp;
+}
+
+nav {
+    background-color: yellow;
+    grid-area: nav;
+}
+
+nav li {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+section {
+    background-color: rgb(90, 17, 168);
+    grid-area: sec;
+}
+
+
+@media screen and (min-width: 800px) {
+
+* {
+    background-color: pink;
+}
+
+
+}
