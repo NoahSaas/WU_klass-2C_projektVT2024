@@ -5,11 +5,37 @@
 #wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 200px 100vh 100vh;
+    grid-template-rows: 200px 100vh 90vh;
     grid-template-areas:
     "hea hea hea"
     "sec sec sec"
     "sec sec sec";
+}
+
+#shopping_cart {
+    grid-area: sca;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#shopping_cart img {
+    height: auto;
+    width: 2rem;
+}
+
+.hover_img:hover {
+    opacity: 0.75;
+    transition: .3s ease;
+    background-blend-mode: darken;
+    border-radius: 0.6rem
+}
+
+#search_bar {
+    grid-area: inp;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 header {
@@ -17,10 +43,10 @@ header {
     grid-area: hea;
     display: grid;
     grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 0.25fr;
     grid-template-areas: 
-    "h1 inp"
-    "nav nav"
+    "h1 inp sca"
+    "nav nav nav"
     ;
 }
 
@@ -37,6 +63,8 @@ header h1 {
 input {
     background-color: brown;
     grid-area: inp;
+    width: 90%;
+    height: 40%;
 }
 
 nav {
@@ -55,6 +83,7 @@ section {
     background-color: rgb(90, 17, 168);
     grid-area: sec;
 }
+
 
 
 @media screen and (min-width: 800px) {
