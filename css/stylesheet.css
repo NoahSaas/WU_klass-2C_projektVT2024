@@ -1,5 +1,10 @@
+:root {
+    --primary_color: #F6FDC5;
+    --secondary_color: #FF901F;
+}
+
 * {
-    background-color: rgb(164, 237, 220);
+    background-color: var(--primary_color);
     margin: 0;
     padding: 0;
     border: none; 
@@ -27,8 +32,14 @@
     width: 2rem;
 }
 
+.hover_img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
 .hover_img:hover {
-    opacity: 0.75;
+    opacity: 0.5;
     transition: .3s ease;
     background-blend-mode: darken;
 }
@@ -41,27 +52,23 @@
 }
 
 .search_container input {
-    background-color: brown;
+    background-color: #C1C3B5;
     margin: 5px;
     grid-area: inp;
     width: 70%;
     height: 30px;
     border-radius: 1rem; 
-    padding: 0.5rem;
+    padding: 0.3rem;
     font-size: 1rem;
+    border: 2px solid black;
 }
 
 .search_container button {
-    background-color: brown;
     width: 2rem;
     height: 2rem;
     border-radius: 1rem; 
-}
-
-img {
-    height: 100%;
-    width: 100%;
-    border-radius: 50%;
+    border-width: 5px;
+    border: none;
 }
 
 header {
@@ -81,9 +88,13 @@ header h1 {
     align-items: center;
     justify-content: space-evenly;
     background-color: transparent;
+}
+
+header h1 a {
+    color: var(--secondary_color);
     font-size: 5vw;
     font-weight: bolder;
-    color: rgb(222, 17, 17);
+    text-decoration: none;
 }
 
 nav {
