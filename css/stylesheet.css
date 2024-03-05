@@ -1,5 +1,8 @@
 * {
-    background-color: whitesmoke;
+    background-color: rgb(164, 237, 220);
+    margin: 0;
+    padding: 0;
+    border: none; 
 }
 
 #wrapper {
@@ -12,14 +15,14 @@
     "sec sec sec";
 }
 
-#shopping_cart {
+.shopping_cart {
     grid-area: sca;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 
-#shopping_cart img {
+.shopping_cart img {
     height: auto;
     width: 2rem;
 }
@@ -28,14 +31,35 @@
     opacity: 0.75;
     transition: .3s ease;
     background-blend-mode: darken;
-    border-radius: 0.6rem
 }
 
-#search_bar {
+.search_container {
     grid-area: inp;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+}
+
+.search_container input {
+    background-color: brown;
+    margin: 5px;
+    grid-area: inp;
+    width: 70%;
+    height: 30px;
+    border-radius: 1rem; 
+}
+
+.search_container button {
+    background-color: brown;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 1rem; 
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
 }
 
 header {
@@ -58,13 +82,6 @@ header h1 {
     font-size: 5vw;
     font-weight: bolder;
     color: rgb(222, 17, 17);
-}
-
-input {
-    background-color: brown;
-    grid-area: inp;
-    width: 90%;
-    height: 40%;
 }
 
 nav {
