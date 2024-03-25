@@ -3,7 +3,13 @@ const category = document.getElementById("category")
 const products = document.getElementsByClassName("product_card")
 
 function show_categories() {
-    category.classList.toggle('category_visible')
+    if (category.style.display == "block"){
+        category.style.display = "none"
+    } 
+    else {
+        category.style.dispay = "block"
+    }
+
     for(i=0; i < products.length; i++) {
         products[i].classList.toggle('product_hidden')
     }

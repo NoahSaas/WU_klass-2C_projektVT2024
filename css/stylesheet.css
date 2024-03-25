@@ -16,27 +16,36 @@
 #wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 200px 10vh 800px;
+    grid-template-rows: 200px 10vh 800px 150px;
     grid-template-areas:
     "hea hea hea"
     "sec sec sec"
-    "sec sec sec";
+    "sec sec sec"
+    "foo foo foo";
 }
 
 #subwrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #347cdb;
+    background-color: #deeefa;
     border-top: 3px solid black;
+}
 
+#category {
+    display: none;
+    background-color: green;
+    width: 75vw;
+    height: 60vh;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .product_card {
     background-color: var(--third_color);
-    height: 250px;
-    width: 250px;
-    border-radius: 5rem;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 2rem;
     margin: 25px;
     border: 3px solid black;
     display: flex;
@@ -46,18 +55,19 @@
 }
 
 .product_card img {
-    height: 125px;
-    width: 125px;
+    height: 50%;
+    width: 50%;
     border-radius: 15rem;
     background-color: transparent;
     margin: 10px;
+    border: 2px solid #87887e;
 }
 
 .product_card h3 {
     background-color: transparent;
     color: var(--secondary_color);
     font-weight: bolder;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     margin: 3px;
 }
 
@@ -65,7 +75,7 @@
     background-color: transparent;
     color: black;
     font-weight: bolder;
-    font-size: 1.25rem;
+    font-size: 1rem;
     margin: 3px;
 }
 
@@ -73,13 +83,6 @@
     background-color: #adafa2;
 }
 
-.category_visible {
-    background-color: red;
-    width: 75vw;
-    height: 60vh;
-    margin-right: auto;
-    margin-left: auto;
-}
 
 .product_hidden {
     display: none;
@@ -154,7 +157,7 @@ header h1 {
     align-items: center;
     justify-content: space-evenly;
     background-color: transparent;
-    margin: 5px;
+    margin: 10px;
 }
 
 header h1 a {
@@ -189,6 +192,15 @@ nav p {
 
 section {
     grid-area: sec;
+}
+
+footer {
+    grid-area: foo;
+    display: grid;
+    grid-template-areas: 
+    ""
+    ""
+    ;
 }
 
 a {
