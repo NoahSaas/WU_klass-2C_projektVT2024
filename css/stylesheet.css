@@ -128,9 +128,13 @@
     width: 60%;
     height: 1.5rem;
     border-radius: 1rem; 
+<<<<<<< Updated upstream
     padding: 0.3rem;
     font-size: 1rem;
     border: 2px solid black;
+=======
+    padding: 0.5rem;
+>>>>>>> Stashed changes
 }
 
 .search_container button {
