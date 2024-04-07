@@ -7,24 +7,75 @@
     <link rel="stylesheet" href="css/stylesheet.css">
 </head>
 <body>
-    <div id="wrapper">
+    <div id="trending_wrapper">
         <header>
             <h1><a href="index.html">BalibabaTown</a></h1>
             <div class="search_container">
                 <input id="searchbar" type="text" placeholder="Search..">
-                <button id="searchbutton" type="button"><img class="hover_img" src="img/magnifying_glass.png" alt="enter search"></button>
+                <button id="searchbutton" type="button"><img class="hover_img" src="img/icons/magnifying_glass.png" alt="enter search"></button>
             </div>
-            <section class="shopping_cart">
-                <img class="hover_img" src="img/shopping_cart.png" alt="your shopping cart">
+            <section class="shopping_cart_icon">
+                <img class="hover_img" src="img/icons/shopping_cart.png" alt="your shopping cart">
             </section>
             <nav>
-                <a href="payment.html">Populärt</a>
-                <p>Kategorier</p>
+                <a href="shop.html">Populärt</a> 
+                <p id="category_button">Kategorier</p>
             </nav>
         </header>
-        <section>
-        
+        <section id="trending_subwrapper">
+            <section id="category">
+                <ul>
+                    <li><a href="error.html" class="category_link">Hem & kök</a></li>
+                    <li><a href="error.html" class="category_link">Elektronik</a></li>
+                    <li><a href="error.html" class="category_link">Sport & utomhus</a></li>
+                    <li><a href="error.html" class="category_link">Skönhet & hälsa</a></li>
+                    <li><a href="error.html" class="category_link">Smycken & tillbehör</a></li>
+                    <li><a href="error.html" class="category_link">Väskor & baggage</a></li>
+                </ul>
+            </section>
+            <section class="product_card">
+                <img src="img/products/barefootshoes.png" alt="">
+                <h3>399 kr</h3>
+                <p>Barfota-skor</p>
+            </section>
+            <section class="product_card">
+                <img src="img/products/wirelesscharger.png" alt="">
+                <h3>499 kr</h3>
+                <p>Trådlös laddare</p>
+            </section>
+            <section class="product_card">
+                <img src="img/products/massagepistol.png" alt="">
+                <h3>899 kr</h3>
+                <p>Massagepistol</p>
+            </section>
+            <section class="product_card">
+                <img src="img/products/nitrilgloves.png" alt="">
+                <h3>99 kr</h3>
+                <p>Nitrilhandskar 50st</p>
+            </section>
+            <section class="product_card">
+                <img src="img/products/soundisolation.png" alt="">
+                <h3>1299 kr</h3>
+                <p>Ljudisolering 12x12</p>
+            </section>
+            <section class="product_card">
+                <img src="img/products/knifesharpener.png" alt="">
+                <h3>299 kr</h3>
+                <p>Knivslipare</p>
+            </section>
         </section>
+        <footer>
+            <section class="footer_top">
+                <p>Kontakta oss via BalibabaTown@gmail.com eller +4600 000 000</p>
+            </section>
+            <section class="footer_bot">
+                <img src="img/icons/logo.png" alt="logo" class="logo">
+                <p>© 2024 BalibabaTown Inc.</p> 
+                <a href="error.html">Användingsvillkor</a>
+                <a href="error.html">Integritetspolicy</a>
+            </section>
+        </footer>
     </div>
+    <script src="js/script.js"></script>
 </body>
 </html>

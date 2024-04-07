@@ -7,6 +7,42 @@
     <link rel="stylesheet" href="css/stylesheet.css">
 </head>
 <body>
-    
+    <div id="shopping_wrapper">
+        <header>
+            <h1><a href="index.html">BalibabaTown</a></h1>
+            <div class="search_container">
+                <input id="searchbar" type="text" placeholder="Search..">
+                <button id="searchbutton" type="button"><img class="hover_img" src="img/icons/magnifying_glass.png" alt="enter search"></button>
+            </div>
+            <section class="shopping_cart_icon">
+                <img class="hover_img" src="img/icons/shopping_cart.png" alt="your shopping cart">
+            </section>
+            <nav>
+                <a href="shop.html">Populärt</a> 
+                <p id="category_button">Kategorier</p>
+            </nav>
+        </header>
+        <section id="shopping_subwrapper">
+            <h3>Din varukorg</h3>
+            <section class="product_card">
+                <img src="img/products/nitrilgloves.png" alt="">
+                <h3>99 kr</h3>
+                <p>Nitrilhandskar 50st</p>
+            </section>
+            <h2>Total: 99 kr</h2>
+            <button class="pay_button" type="button" onclick="window.location.href='error.html'"><p>Betala</p></button>
+        </section>
+        <footer>
+            <section class="footer_top">
+                <p>Kontakta oss via BalibabaTown@gmail.com eller +4600 000 000</p>
+            </section>
+            <section class="footer_bot">
+                <img src="img/icons/logo.png" alt="logo" class="logo">
+                <p>© 2024 BalibabaTown Inc.</p> 
+                <a href="error.html">Användingsvillkor</a>
+                <a href="error.html">Integritetspolicy</a>
+            </section>
+        </footer>
+    </div>
 </body>
 </html>
